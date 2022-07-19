@@ -1,0 +1,1095 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.owl-dot{
+  margin: 0 1px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid black !important;
+  transition: all 0.3s ease;
+}
+.owl-dot:hover{
+  background: black !important;
+}
+
+.owl-dot.active{
+  background: black !important;
+}
+
+.hamburger{
+  cursor: pointer;
+  display: block;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  padding-top: 16px;
+  border-radius: 50%;
+}
+.bar{
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 2px auto;
+  transition: 0.3s ease-in-out;
+  background-color:black;
+  border-radius: 100000000px;
+}
+
+header{
+  width: 100%;
+  height: 75vh;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(/dist/images/ganaja-fly-over.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+.navbar{
+  background-color: transparent;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.menu-bar{
+  align-items: center;
+  margin-left:900px;
+}
+
+.content{
+  width: 56%;
+  margin: auto;
+  margin-top: 100px;
+  margin-left: 300px;
+  text-align: center;
+  color: white;
+
+}
+
+.content h1{
+  font-size: 40px;
+}
+
+.content h3{
+  font-weight: 200;
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+@media(max-width: 450px){
+  header{
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+  }
+  .navbar{
+   background-color: white;
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   padding-left: 10px;
+  }
+  .menu-bar{
+  align-items: center;
+  margin-left: 45%;
+  }
+  .content{
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+  margin-left: 38px;
+  text-align: center;
+  color: white;
+
+  }
+  .content h1{
+    font-size: 30px;
+  }
+  .content h3{
+    font-size: 15px;
+  }
+  .navbar img{
+    height: 40px;
+    width: 140px;
+  }
+
+  .hamburger{
+    background-color: #fafafa;
+  }
+}
+
+.counters .container{
+  background:rgb(36, 102, 36) ;
+  height: 20vh;
+  width: 100%;
+  padding: 40px 0 40px 250px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  color: #fff;
+  text-align: center;
+}
+
+.counters .container .counter{
+  font-size: 40px;
+}
+
+.counters .container h3{
+  font-size: 17px;
+}
+@media(max-width: 450px){
+  .counters .container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+  }
+}
+
+.slider1 .container{
+  height: 70vh;
+  width: 100%;
+  background: #fafafa;
+}
+
+.slider1 .container h3{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.slider1 .container h4{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media(max-width: 450px){
+  .slider1 .container{
+    margin-top: 15px;
+  }
+  .slider1 .container h3{
+    font-size: 19px
+  }
+  .slider1 .container h4{
+    font-size: 13px;
+  }
+}
+
+.slider1 .wrapper{
+  width: 100%;
+}
+
+.slider1 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider1 .carousel .card{
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 450px){
+  .slider1{
+    height: fit-content;
+  }
+  .slider1 .carousel .card{
+    height: 250px;
+  }
+}
+
+.slider1 .carousel .card-1{
+  background-image: url(/dist/images/ganaja-fly-over-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider1 .carousel .card-2{
+  background: url(/dist/images/ganaja-fly-over-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-3{
+  background: url(/dist/images/ganaja-fly-over-4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.slider1 .carousel .card-4{
+  background: url(/dist/images/ganaja-fly-over-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-5{
+  background: url(/dist/images/ganaja-fly-over.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-6{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.54-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-7{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.54-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-8{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.55-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-9{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.55-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-10{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.56-AM-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-11{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.56-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-12{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.57-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider1 .carousel .card-13{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.57-AM-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.speech{
+  width: 90%;
+  margin: auto;
+  height: 25vh;
+  display: flex;
+}
+
+.speech .text{
+  flex-basis: 70%;
+}
+
+.speech img{
+  margin-left: 200px;
+  width: 250px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.speech h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.speech h2{
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.speech h5{
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+@media(max-width: 450px){
+  .speech{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: -200px;
+  }
+  .speech img{
+    margin-top: 20px;
+    margin-left: 45px;
+  }
+  .speech h1{
+    font-size: 40px;
+  }
+  .speech h5{
+    font-size: 17px;
+    margin-top: 50px;
+    line-height: 25px;
+  }
+}
+
+
+.slider2{
+  height: 70vh;
+  width: 100%;
+  margin-top: 200px;
+  background: #fafafa;
+}
+
+.slider2 h1{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.slider2 h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media(max-width: 450px){
+  .slider2{
+    margin-top: 15px;
+  }
+  .slider2 h1{
+    font-size: 19px
+  }
+  .slider2 h3{
+    font-size: 13px;
+  }
+}
+
+.slider2 .wrapper{
+  width: 100%;
+}
+
+.slider2 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider2 .carousel .card{
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 450px){
+  .slider2{
+    height: fit-content;
+  }
+  .slider2 .carousel .card{
+    height: 250px;
+  }
+}
+
+
+.slider2 .carousel .card-1{
+  background-image: url(/dist/images/governor-bello-nnma-kogi-2021.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider2 .carousel .card-2{
+  background: url(/dist/images/nnma-kogi-2021.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider2 .carousel .card-3{
+  background: url(/dist/images/nnma-kogi-2021-2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.slider2 .carousel .card-4{
+  background: url(/dist/images/nnma-kogi-2021-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider2 .carousel .card-5{
+  background: url(/dist/images/nnma-kogi-2021-gyb-address.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider2 .carousel .card-6{
+  background: url(/dist/images/nnma-kogi-2021-gyb-answering-questions.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider2 .carousel .card-7{
+  background: url(/dist/images/nnma-kogi-2021-kogi-carbinet-members.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider2 .carousel .card-8{
+  background: url(/dist/images/nnma-kogi-2021-participant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider3{
+  height: 70vh;
+  width: 100%;
+
+}
+
+.slider3 h1{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.slider3 h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media(max-width: 450px){
+  .slider3{
+    margin-top: 15px;
+  }
+  .slider3 h1{
+    font-size: 19px
+  }
+  .slider3 h3{
+    font-size: 13px;
+  }
+}
+
+
+.slider3 .wrapper{
+  width: 100%;
+}
+
+.slider3 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider3 .carousel .card{
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 450px){
+  .slider3{
+    height: fit-content;
+  }
+  .slider3 .carousel .card{
+    height: 250px;
+  }
+}
+
+
+.slider3 .carousel .card-1{
+  background-image: url(/dist/images/Muhammadu-Buhari-Square-Lokoja-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider3 .carousel .card-2{
+  background: url(/dist/images/Muhammadu-Buhari-Square-Lokoja.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+.slider4{
+  height: 100vh;
+  width: 100%;
+}
+
+.slider4 h1{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.slider4 h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media(max-width: 450px){
+  .slider4{
+    margin-top: 15px;
+    height: fit-content;
+  }
+  .slider4 h1{
+    font-size: 19px
+  }
+  .slider4 h3{
+    font-size: 13px;
+  }
+}
+
+
+.slider4 .wrapper{
+  width: 100%;
+}
+
+.slider4 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider4 .carousel .card{
+  height: 500px;
+  margin: 20px 0;
+}
+
+@media(max-width: 450px){
+  .slider4 .carousel .card{
+    height: 250px;
+  }
+}
+
+
+.slider4 .carousel .card-1{
+  background-image: url(/dist/images/For-the-record.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -40px;
+}
+
+.slider4 .carousel .card-2{
+  background: url(/dist/images/For-the-record.agricjpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider4 .carousel .card-3{
+  background: url(/dist/images/For-the-record-electricty.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.slider5{
+  height: 70vh;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.slider5 h1{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.slider5 h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media(max-width: 450px){
+  .slider5{
+    margin-top: 15px;
+    height: fit-content;
+  }
+  .slider5 h1{
+    font-size: 19px
+  }
+  .slider5 h3{
+    font-size: 13px;
+  }
+}
+
+.slider5 .wrapper{
+  width: 100%;
+}
+
+.slider5 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider5 .carousel .card{
+  height: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 450px){
+  .slider5{
+    height: fit-content;
+  }
+  .slider5 .carousel .card{
+    height: 250px;
+  }
+}
+
+.slider5 .carousel .card-1{
+  background-image: url(/dist/images/ganaja-fly-over-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider5 .carousel .card-2{
+  background: url(/dist/images/ganaja-fly-over-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-3{
+  background: url(/dist/images/ganaja-fly-over-4.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.slider5 .carousel .card-4{
+  background: url(/dist/images/ganaja-fly-over-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-5{
+  background: url(/dist/images/ganaja-fly-over.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-6{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.54-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-7{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.54-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-8{
+  background: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.55-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-9{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.55-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-10{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.56-AM-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-11{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.56-AM.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-12{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.57-AM-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider5 .carousel .card-13{
+  background-image: url(/dist/images/WhatsApp-Image-2021-10-30-at-9.55.57-AM-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.resoures{
+  height: 90vh;
+  width: 85%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.resoures h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.box{
+  background-color: rgb(202, 199, 199);
+  height: 80px;
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+  transition: .5s;
+  padding: 30px 30px;
+  font-size: 25px;
+}
+
+.box:hover{
+  background-color: green;
+}
+
+.grid{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.grid a{
+  text-decoration: none;
+  color: black;
+}
+
+@media(max-width: 450px){
+  .resoures{
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+    margin-bottom: 20px;
+  }
+  .resoures h1{
+    margin-top: 20px;
+    font-size: 19px;
+  }
+  .box{
+    height: 60px;
+    width: 100%;
+    font-size: 17px;
+    padding-top: 20px;
+  }
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.slider6{
+  background-color: #fafafa;
+  height: 80vh;
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+.slider6 .wrapper{
+  width: 100%;
+}
+
+.slider6 .wrapper .carousel{
+  max-width: 100%;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.slider6 .carousel .card{
+  height: 430px;
+  margin: 20px 0;
+  margin-left: -10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
+}
+
+@media(max-width: 450px){
+  .slider6{
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  .slider6 .carousel .card{
+    height: 400px;
+  }
+}
+
+.slider6 .carousel .card-1{
+  background-image: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.50-AM-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider6 .carousel .card-2{
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.50-AM-1-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider6 .carousel .card-3{
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.51-AM-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.slider6 .carousel .card-4{
+  background: url(/dist/images/4-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider6 .carousel .card-5{
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.51-AM-2-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider6 .carousel .card-6{
+  background-repeat: no-repeat;
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.51-AM-1-1024x1024.jpeg);
+  background-size: cover;
+}
+.slider6 .carousel .card-7{
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.52-AM-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider6 .carousel .card-8{
+  background: url(/dist/images/WhatsApp-Image-2021-09-06-at-11.44.51-AM-3-1024x1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .vechile{
+  height: fit-content;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.vechile h1{
+  text-align: center;
+  font-size: 30px;
+
+} */
+
+
+@media(max-width: 450px){
+  .vechile{
+    margin-top: 15px;
+    height: fit-content;
+  }
+  .vechile h1{
+    font-size: 19px
+  }
+  .vechile img{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+.images{
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 20px;
+}
+
+.images img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.images .grid2{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+@media(max-width: 450px){
+  .images{
+    padding-bottom: 20px;
+  }
+  .images .grid2{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: 45vh;
+  background-color: #252525;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.link a{
+  text-decoration: none;
+  color: rgb(180, 175, 175);
+  padding: 0 10px;
+}
+
+footer .socials{
+  margin: 30px 0;
+}
+
+footer .footlogo img{
+  background: #fff;
+}
+
+footer .footlogo img:hover{
+  transform: scale(1.1);
+}
+
+footer p{
+  margin: 20px 0;
+  color: rgb(180, 175, 175);
+}
+
+@media(max-width: 450px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .link a{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+}
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-box{
+  text-align: center;
+  margin: 50px auto;
+  width: 400px;
+  background: transparent;
+  color: white;
+  position: relative;
+  animation: modalopen 2s;
+}
+
+@keyframes modalopen {
+  from { 
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal p{
+  position: relative;
+  margin: 30px;
+}
+.modal a{
+  transition: .4s;
+}
+.modal .igm{
+  background: #fff;
+}
+.modal a:hover{
+  color: aqua;
+}
+
+.modal svg{
+  fill: white;
+  height: 15px;
+}
+
+.modal svg:hover{
+  fill: aqua;
+}
+
+.modal a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a {
+  margin-left: 20px;
+  color: white;
+}
+
+.socials img:hover{
+  transform: scale(1.1);
+}
+
+.modal .close{
+  height: 23px;
+  width: 23px;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: -440px;
+}
+
+@media(max-width: 450px){
+  .modal .close{
+    right: 30px;
+  }
+}
+
+.modal .close span{
+  width: 28px;
+  height: 2px;
+  margin: 3px auto;
+}
+
+.modal .close span{
+  background-color: #fff;
+}
+
+.modal .close span:nth-child(2){
+  opacity: 0;
+}
+
+.modal .close span:nth-child(1){
+  transform: translateY(15px) rotate(45deg);
+}
+.modal .close span:nth-child(3){
+  transform: translateY(5.8px) rotate(-45deg);
+}
+
+.dropdown-menu{
+  display: none;
+  position: absolute;
+  right: -10%;
+  top: 38%;
+  background-color: rgba(0,0,0,0.8);
+  
+}
+
+.dropdown-menu li{
+  display: block;
+  margin: 10px;
+  width: 150px;
+  /* padding: 100px; */
+}
+
+.modal p:hover .dropdown-menu{
+  display: block;
+}
+
+
+
