@@ -194,7 +194,8 @@ header{
 
 @media(max-width: 450px){
   .slider1 .container{
-    margin-top: 15px;
+    max-height: 420px;
+    padding-top: 10px;
   }
   .slider1 .container h3{
     font-size: 19px
@@ -221,14 +222,6 @@ header{
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2) ;
 }
 
-@media(max-width: 450px){
-  .slider1{
-    height: fit-content;
-  }
-  .slider1 .carousel .card{
-    height: 250px;
-  }
-}
 
 .slider1 .carousel .card-1{
   background-image: url(/dist/images/ganaja-fly-over-2.jpg);
@@ -338,18 +331,23 @@ header{
     flex-direction: column;
     width: 80%;
     margin: auto;
-    margin-top: -200px;
+    padding-top: 10px;
   }
   .speech img{
     margin-top: 20px;
     margin-left: 45px;
   }
   .speech h1{
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .speech h2{
+    font-size: 17px;
+    font-weight: 600;
   }
   .speech h5{
-    font-size: 17px;
-    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
     line-height: 25px;
   }
 }
